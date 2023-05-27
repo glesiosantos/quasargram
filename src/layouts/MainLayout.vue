@@ -7,10 +7,10 @@
             flat
             round
             dense
-            class="large-screen-only"
+            class="large-screen-only q-mr-sm"
             size="18px"
             icon="eva-camera-outline" />
-          <q-separator vertical inset/>
+          <q-separator vertical inset spaced class="large-screen-only"/>
           <q-toolbar-title class="text-bold text-grand-hotel">Quasargram</q-toolbar-title>
           <q-btn
             to="/"
@@ -61,6 +61,11 @@ export default defineComponent({
 </script>
 
 <style lang="scss">
+  .q-toolbar{
+    @media (min-width: $breakpoint-sm-min){
+      height: 77px;
+    }
+  }
   .q-toolbar__title{
     font-size: 30px;
     margin-top: 10;
